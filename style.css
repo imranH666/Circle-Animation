@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.style-main {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: #0000007c;
+}
+.circle, .circle2, .circle3, .circle4, .circle5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    background-color: red;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: inline-block;
+    margin: 2px;
+    animation: testing 5s linear forwards;
+    z-index: -10;
+}
+.circle2 {
+    top: 0;
+    left: 100px;
+    background-color: green;
+}
+.circle3 {
+    top: 100px;
+    left: 0;
+    background-color: yellow;
+}
+.circle4 {
+    top: 0;
+    left: 200px;
+    background-color: yellow;
+}
+.circle5 {
+    top: 200px;
+    left: 0;
+    background-color: green;
+}
+
+@keyframes testing {
+    100% {
+        top: 100%;
+        left: 100%;
+    }
+}
+
+
+.text-main {
+    width: 100%;
+    height: 100%;
+    background-color: #0000007c;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 50;
+}
+.text-main h1 {
+    color: #fff;
+    font-size: 50px;
+    padding-top: 100px;
+}
+.text-main p {
+    padding: 50px 300px 0 300px;
+    color: #fff;
+    line-height: 30px;
+}
+.text-main button {
+    margin: 30px 0 0 0;
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.text-main button:hover {
+    background-color: #fff;
+    color: black;
+    border: 2px solid transparent;
+}
